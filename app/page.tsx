@@ -883,10 +883,10 @@ export default function Home() {
                 <p className="mt-6 text-sm leading-7 text-gray-300 sm:text-base sm:leading-8">
                   {selectedMenu.description}
                 </p>
-                <p className="mt-5 text-sm leading-7 text-gray-500">
+                {/* <p className="mt-5 text-sm leading-7 text-gray-500">
                   Experience carefully selected ingredients and premium flavors
                   prepared especially for our Fun2 guests.
-                </p>
+                </p> */}
                 <button
                   type="button"
                   onClick={() => setSelectedMenu(null)}

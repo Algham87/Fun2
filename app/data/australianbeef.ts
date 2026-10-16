@@ -20,7 +20,7 @@ const australianbeef = [
   },
   {
     name: "Combo 3 in 1",
-    image: "/images/AU4.jpeg",
+    image: "/images/AU4.PNG",
     description:
       "Premium Australian Beef YP featuring Tenderloin, Striploin, and Cube Roll.",
   },

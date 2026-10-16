@@ -25,7 +25,7 @@ const wagyubeef = [
   },
   {
     name: "3 in 1 Combo",
-    image: "/images/W5.jpeg",
+    image: "/images/W5.png",
     description:
       "Premium Wagyu beef featuring Tenderloin, Striploin, and Cube Roll.",
   },
