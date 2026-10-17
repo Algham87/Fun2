@@ -2,7 +2,7 @@
 "use client";
 
 import Navbar from "../components/Navbar";
-import BranchCard from "../components/branchcard";
+import BranchCard from "../components/BranchCard";
 import branches from "../data/branches";
 
 export default function AboutPage() {
