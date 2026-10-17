@@ -21,13 +21,6 @@ export const alacarteCategories: MenuCategory[] = [
   name: "Soup Base",
   image: "/images/soup.png",
   description: "Discover our premium soup selection.",
-
-  backgrounds: [
-    "/images/2soup1.png",
-    "/images/2soup2.png",
-    "/images/2soup2.png",
-  ],
-
   items: [
     {
       name: "Clear Soup",
