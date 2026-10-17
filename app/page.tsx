@@ -4,7 +4,7 @@ import { useLayoutEffect, useRef, useState } from "react";
 
 import Navbar from "./components/Navbar";
 import branches from "./data/branches";
-import BranchCard from "./components/BranchCard";
+import BranchCard from "./components/branchcard";
 import wagyubeef from "./data/wagyubeef";
 import australianbeef from "./data/australianbeef";
 import limitedmenu from "./data/limitedmenu";
