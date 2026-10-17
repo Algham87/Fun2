@@ -11,6 +11,7 @@ import AustralianBeef from "./category/AustralianBeef";
 import LambChicken from "./category/LambChicken";
 import GrillComboSet from "./category/GrillComboSet";
 import SteamboatComboSet from "./category/SteamboatComboSet";
+import StirFry from "./category/StirFry";
 import FriedFood from "./category/FriedFood";
 import Drinks from "./category/Drinks";
 
@@ -116,6 +117,14 @@ if (category.slug === "fried-food") {
       menuType={menuType}
     />
   );
+  }
+if (category.slug === "stir-fry") {
+  return (
+    <StirFry
+      category={category}
+      menuType={menuType}
+    />
+  );
 }
 if (category.slug === "beverages") {
   return (
@@ -125,163 +134,6 @@ if (category.slug === "beverages") {
     />
   );
 }
-  /*
-  ============================================
-  SPECIAL LAYOUT - STIR FRY
-  ============================================
-  */
-
-  if (isStirFry) {
-    const teriyakiItems = category.items.filter((item) =>
-      item.name.toLowerCase().startsWith("teriyaki")
-    );
-
-    const barbequeItems = category.items.filter((item) =>
-      item.name.toLowerCase().startsWith("barbeque")
-    );
-
-    return (
-      <main className="min-h-screen bg-[#111111] text-white">
-        <Navbar />
-
-        {/* HERO */}
-        <section className="relative overflow-hidden">
-          <div className="relative h-[520px] w-full md:h-[620px]">
-
-            {/* 3 BACKGROUND IMAGES */}
-            <div className="grid h-full grid-cols-3">
-              {category.backgrounds?.map((image, index) => (
-                <div
-                  key={`${image}-${index}`}
-                  className="relative h-full overflow-hidden"
-                >
-                  <img
-                    src={image}
-                    alt={`${category.name} ${index + 1}`}
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-              ))}
-            </div>
-
-            {/* OVERLAY */}
-            <div className="absolute inset-0 bg-black/10" />
-
-            <div className="absolute inset-0 bg-gradient-to-t from-[#111111] via-black/20 to-black/40" />
-
-            {/* HERO TEXT */}
-            <div className="absolute inset-0 z-10 flex items-end">
-              <div className="mx-auto w-full max-w-7xl px-6 pb-16">
-
-                <Link
-                  href={backUrl}
-                  className="text-sm font-medium text-orange-400 hover:text-orange-300"
-                >
-                  ← Back to {menuLabel}
-                </Link>
-
-                <p className="mt-12 text-sm font-semibold uppercase tracking-[0.4em] text-orange-400">
-                  Fun2 Steamboat & Grill
-                </p>
-
-                <h1 className="mt-4 text-5xl font-bold md:text-7xl">
-                  {category.name}
-                </h1>
-
-                <p className="mt-6 max-w-2xl text-lg leading-8 text-gray-300">
-                  {category.description}
-                </p>
-
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* STIR FRY MENU */}
-        <section className="px-6 py-20">
-          <div className="mx-auto max-w-5xl">
-
-            {/* TERIYAKI */}
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-orange-400">
-                Teriyaki
-              </p>
-
-              <h2 className="mt-3 text-3xl font-bold md:text-4xl">
-                Teriyaki Selection
-              </h2>
-
-              <div className="mt-6 h-px w-full bg-white/10" />
-
-              <div className="mt-8 grid gap-4 md:grid-cols-2">
-
-                {teriyakiItems.map((item, index) => (
-                  <article
-                    key={`${item.name}-${index}`}
-                    className="rounded-2xl border border-white/10 bg-[#1d1d1d] p-6 transition duration-300 hover:border-orange-500/50 hover:bg-[#242424]"
-                  >
-                    <h3 className="text-xl font-bold">
-                      {item.name}
-                    </h3>
-
-                    <p className="mt-3 leading-7 text-gray-400">
-                      {item.description}
-                    </p>
-                  </article>
-                ))}
-
-              </div>
-            </div>
-
-            {/* BARBEQUE */}
-            <div className="mt-20">
-
-              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-orange-400">
-                Barbeque
-              </p>
-
-              <h2 className="mt-3 text-3xl font-bold md:text-4xl">
-                Barbeque Selection
-              </h2>
-
-              <div className="mt-6 h-px w-full bg-white/10" />
-
-              <div className="mt-8 grid gap-4 md:grid-cols-2">
-
-                {barbequeItems.map((item, index) => (
-                  <article
-                    key={`${item.name}-${index}`}
-                    className="rounded-2xl border border-white/10 bg-[#1d1d1d] p-6 transition duration-300 hover:border-orange-500/50 hover:bg-[#242424]"
-                  >
-                    <h3 className="text-xl font-bold">
-                      {item.name}
-                    </h3>
-
-                    <p className="mt-3 leading-7 text-gray-400">
-                      {item.description}
-                    </p>
-                  </article>
-                ))}
-
-              </div>
-            </div>
-
-            {/* BACK BUTTON */}
-            <div className="mt-16 text-center">
-              <Link
-                href={backUrl}
-                className="inline-flex rounded-full border border-white/30 px-8 py-4 font-semibold transition hover:border-orange-400 hover:text-orange-400"
-              >
-                ← View All Categories
-              </Link>
-            </div>
-
-          </div>
-        </section>
-      </main>
-    );
-  }
-
   /*
   ============================================
   NORMAL CATEGORY LAYOUT

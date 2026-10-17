@@ -19,7 +19,7 @@ export const alacarteCategories: MenuCategory[] = [
   {
   slug: "soup-base",
   name: "Soup Base",
-  image: "/images/2Soup1.png",
+  image: "/images/soup.png",
   description: "Discover our premium soup selection.",
 
   backgrounds: [
@@ -582,54 +582,48 @@ export const alacarteCategories: MenuCategory[] = [
   {
     slug: "stir-fry",
     name: "Stir Fry",
-    image: "/images/SF1.png",
+    image: "/images/SF.png",
     description: "Explore our stir fry selection.",
-    backgrounds: [
-      "/images/SF1w.png",
-      "/images/SF2a.png",
-      "/images/SF3l.png",
-      "/images/SF3c.png",
-    ],
     items: [
       {
         name: "Teriyaki Wagyu",
-        description:
-          "Tender wagyu beef glazed with our signature teriyaki sauce.",
+        image: "/images/SF1w.png",
+        description: "Tender wagyu beef glazed with our signature teriyaki sauce.",
       },
       {
         name: "Teriyaki Aust Beef",
-        description:
-          "Australian beef cooked with a rich and savory teriyaki glaze.",
+        image: "/images/SF2a.png",
+        description: "Tender wagyu beef glazed with our signature teriyaki sauce.",
       },
       {
         name: "Teriyaki Lamb",
-        description:
-          "Tender lamb finished with our flavorful teriyaki sauce.",
+        image: "/images/SF3l.png",
+        description: "Tender wagyu beef glazed with our signature teriyaki sauce.",
       },
       {
         name: "Teriyaki Chicken",
-        description:
-          "Juicy chicken stir-fried with our signature teriyaki sauce.",
+        image: "/images/SF4c.png",
+        description: "Tender wagyu beef glazed with our signature teriyaki sauce.",
       },
       {
         name: "Barbeque Wagyu",
-        description:
-          "Premium wagyu beef coated with a rich barbeque sauce.",
+        image: "/images/SF5w.png",
+        description: "Tender wagyu beef glazed with our signature teriyaki sauce.",
       },
       {
         name: "Barbeque Aust Beef",
-        description:
-          "Australian beef stir-fried with our smoky barbeque sauce.",
+        image: "/images/SF5a.png",
+        description: "Tender wagyu beef glazed with our signature teriyaki sauce.",
       },
       {
         name: "Barbeque Lamb",
-        description:
-          "Tender lamb combined with a savory barbeque glaze.",
+        image: "/images/SF7l.png",
+        description: "Tender wagyu beef glazed with our signature teriyaki sauce.",
       },
       {
         name: "Barbeque Chicken",
-        description:
-          "Juicy chicken stir-fried with a delicious barbeque sauce.",
+        image: "/images/SF8c.png",
+        description: "Tender wagyu beef glazed with our signature teriyaki sauce.",
       },
     ],
     },
@@ -744,7 +738,7 @@ export const alacarteCategories: MenuCategory[] = [
   {
     slug: "beverages",
     name: "Drinks",
-    image: "/images/alacarte-drinks.jpg",
+    image: "/images/D.png",
     description: "Refreshing drinks for every occasion.",
     items: [
       {
@@ -840,11 +834,6 @@ export const alacarteCategories: MenuCategory[] = [
       {
         name: "Beverage 01",
         image: "/images/D19.png",
-        description: "Add your beverage description here.",
-      },
-      {
-        name: "Beverage 01",
-        image: "/images/D20.png",
         description: "Add your beverage description here.",
       },
       {
@@ -950,15 +939,8 @@ export const buffetCategories: MenuCategory[] = [
   {
   slug: "soup-base",
   name: "Soup Base",
-  image: "/images/2Soup1.png",
+  image: "/images/soup.png",
   description: "Discover our premium soup selection.",
-
-  backgrounds: [
-    "/images/2soup1.png",
-    "/images/2soup2.png",
-    "/images/2soup2.png",
-  ],
-
   items: [
     {
       name: "Clear Soup",
@@ -1116,7 +1098,7 @@ export const buffetCategories: MenuCategory[] = [
   {
     slug: "bebola",
     name: "Bebola",
-    image: "/images/b.png",
+    image: "/images/b_B.png",
     description: "Explore our grill selection.",
     items: [
       {
@@ -1190,7 +1172,7 @@ export const buffetCategories: MenuCategory[] = [
   {
     slug: "Steamboat-ala-carte",
     name: "Steamboat Ala Carte",
-    image: "/images/S.png",
+    image: "/images/s_B.png",
     description: "Explore our grill selection.",
     items: [
       {
@@ -1234,7 +1216,7 @@ export const buffetCategories: MenuCategory[] = [
   {
     slug: "australian-beef",
     name: "Australian Beef",
-    image: "/images/au.png",
+    image: "/images/au_B.png",
     description: "Explore our grill selection.",
     items: [
       {
@@ -1274,7 +1256,7 @@ export const buffetCategories: MenuCategory[] = [
 {
     slug: "lamb-chicken",
     name: "Lamb Chicken",
-    image: "/images/lc.png",
+    image: "/images/lc_B.png",
     description: "Explore our grill selection.",
     items: [
       {

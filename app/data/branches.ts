@@ -54,9 +54,15 @@ const branches = [
     title: "Ice Cream & Sauce Station",
     description:
       "Make your dining experience even more enjoyable with our self-service ice cream and sauce station. Enjoy complimentary ice cream from 3 different brands and a variety of sauces and condiments to complement your favourite dishes."
-},
+  },
+  {
+    src: "/images/baburajakaca.png",
+    title: "Welcome Area & Fhoto Spot",
+    description:
+      "Step into Fun2 Steamboat & Grill and enjoy a warm, welcoming atmosphere from the moment you arrive. Our entrance features a cosy seating corner and a unique Instagram-inspired mirror, perfect for customers to take photos, capture memorable moments, and share their Fun2 experience on social media."
+  },
     ],
-    address: "Add your branch address here",
+    address: "Block A, Unit 6 & 7, Ground Floor, Lot 28940 jalan Baburaja NBD",
     hours: "11:00 AM — 10:00 PM",
   },
   {
@@ -95,30 +101,30 @@ const branches = [
   },
   {
     src: "/images/berakas_kaca.png",
-    title: "VIP Room 2",
+    title: "Fhoto Spot Area",
     description:
-      "Enjoy a more private and comfortable dining experience in our exclusive VIP Room, perfect for family gatherings, celebrations, and special occasions.Minimum booking: 7 guests. Maximum capacity: 12 guests per room.",
+      "Step into Fun2 Steamboat & Grill and enjoy a warm, welcoming atmosphere from the moment you arrive. Our entrance features a cosy seating corner and a unique Instagram-inspired mirror, perfect for customers to take photos, capture memorable moments, and share their Fun2 experience on social media."
   },
    {
     src: "/images/berakas_vip1.png",
-    title: "Sharing Table",
+    title: "VIP 2 Table",
     description:
       "Enjoy a spacious table perfect for sharing a delicious steamboat and grill experience with family and friends.",
   },
    {
     src: "/images/berakas_vip2.png",
-    title: "Ice Cream & Sauce Station",
+    title: "VIP 2 Table",
     description:
       "Make your dining experience even more enjoyable with our self-service ice cream and sauce station. Enjoy complimentary ice cream from 3 different brands and a variety of sauces and condiments to complement your favourite dishes."
 },
 {
     src: "/images/berakas_vip3.png",
-    title: "Ice Cream & Sauce Station",
+    title: "VIP 3 table",
     description:
       "Make your dining experience even more enjoyable with our self-service ice cream and sauce station. Enjoy complimentary ice cream from 3 different brands and a variety of sauces and condiments to complement your favourite dishes."
 },
     ],
-    address: "Add your branch address here",
+    address: "Unit 3 & 4, ground Floor, Block C, Spg 58 Jln Utama berakas Kg Serusop. BB2313",
     hours: "11:00 AM — 10:00 PM",
   },
 ];

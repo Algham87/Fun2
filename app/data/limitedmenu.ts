@@ -4,21 +4,21 @@ const limitedmenu = [
     image: "/images/karubi.png",
     label: "Baburaja Branch Only",
     description:
-      "A special selection prepared exclusively for Fun2 guests.",
+      "A special selection available exclusively at our Baburaja branch.",
   },
   {
     name: "MB9++",
     image: "/images/mb9.png",
     label: "Baburaja Branch Only",
     description:
-      "Discover an unforgettable combination of premium flavors.",
+      "A special selection available exclusively at our Baburaja branch.",
   },
   {
     name: "Steamboat Set",
     image: "/images/steamboatlimited.png",
     label: "New Arrival",
     description:
-      "A special seafood selection for a memorable Steamboat & Grill experience.",
+      "Enjoy a complete steamboat experience featuring 2 bowls of rice, 1 set of beef rolls, 1 set of prawns, 1 set of white squid, and a selection of fish balls, mushrooms, and fresh vegetables. Choose 2 drinks from our selection of Orange Juice, Ribena, Wheatgrass, and Iced Lemon to complete your meal.  A perfect set for sharing a delicious and satisfying steamboat experience!.",
   },
   {
     name: "Meal Set",
@@ -32,7 +32,7 @@ const limitedmenu = [
     image: "/images/angustomahawklimited.png",
     label: "Special Set",
     description:
-      "An exclusive creation available for a limited time.",
+      "Experience the rich flavour of premium Angus beef with our impressive Tomahawk cut, known for its tender texture and juicy flavour. Perfect for grilling and sharing a memorable dining experience. An exclusive special set at Fun2 Steamboat & Grill.",
   },
 ];
 

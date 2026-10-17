@@ -82,7 +82,7 @@ export default function ContactPage() {
             {branches.map((branch, index) => (
               <article
                 key={branch.name}
-                className="group flex flex-col rounded-2xl border border-white/[0.08] bg-[#151515] p-6 transition duration-300 hover:-translate-y-1 hover:border-[#C6A45C]/40 hover:bg-[#191919] md:p-7"
+                className="group flex h-full flex-col rounded-2xl border border-white/[0.08] bg-[#151515] p-6 transition duration-300 hover:-translate-y-1 hover:border-[#C6A45C]/40 hover:bg-[#191919] md:p-7"
               >
                 <div className="flex items-center justify-between">
                   <span className="text-xs font-medium tracking-[0.2em] text-[#C6A45C]">
@@ -101,11 +101,11 @@ export default function ContactPage() {
                   {branch.name}
                 </h3>
 
-                <p className="mt-3 min-h-12 text-sm leading-6 text-[#96948E]">
+                <p className="mt-3 min-h-[72px] text-sm leading-6 text-[#96948E]">
                   {branch.address}
                 </p>
 
-                <div className="mt-5 border-t border-white/[0.08] pt-5">
+                <div className="mt-auto border-t border-white/[0.08] pt-5">
                   <a
                     href={branch.mapsUrl}
                     target="_blank"

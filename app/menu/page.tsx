@@ -8,10 +8,10 @@ const menuOptions = [
     title: "À La Carte",
     description:
       "Discover premium Wagyu, Australian beef, and signature selections crafted for your own dining experience.",
-    image: "/images/W1.png",
+    image: "/images/alacarte.png",
     imageAlt: "Premium Wagyu beef for the Fun2 À La Carte menu",
     number: "01",
-    action: "Explore À La Carte",
+    action: "Explore ÀLa Carte",
   },
   {
     href: "/menu/buffet",
@@ -19,7 +19,7 @@ const menuOptions = [
     title: "Buffet Experience",
     description:
       "Gather around the table for a generous Steamboat & Grill experience, made for sharing with family and friends.",
-    image: "/images/buffet.jpg",
+    image: "/images/buffet.png",
     imageAlt: "Fun2 Steamboat and Grill buffet experience",
     number: "02",
     action: "Explore Buffet",

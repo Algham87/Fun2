@@ -179,19 +179,21 @@ function LimitedMenuCard({
         alt={item.name}
         className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-110"
       />
+
       <div className="absolute inset-0 bg-gradient-to-t from-black via-black/45 to-black/5" />
+
       <div className="absolute bottom-0 left-0 w-full p-6">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#D4AF37]">
           {item.label}
         </p>
+
         <h3 className="mt-2 text-2xl font-bold text-white">
           {item.name}
         </h3>
-        <p className="mt-3 text-sm leading-6 text-gray-300">
-          {item.description}
-        </p>
+
         <div className="mt-5 flex items-center gap-3">
           <div className="h-px w-12 bg-[#D4AF37] transition-all duration-500 group-hover:w-20" />
+
           <span className="text-xs font-semibold uppercase tracking-wider text-[#D4AF37] opacity-0 transition duration-300 group-hover:opacity-100">
             View Details →
           </span>
@@ -806,7 +808,7 @@ export default function Home() {
       </div>
       <div className="absolute bottom-0 left-0 w-full p-6">
         <h3 className="text-2xl font-bold text-white">{item.name}</h3>
-        <p className="mt-3 text-sm leading-6 text-gray-300">{item.description}</p>
+        {/* <p className="mt-3 text-sm leading-6 text-gray-300">{item.description}</p> */}
         <div className="mt-5 h-px w-12 bg-[#D4AF37] transition-all duration-500 group-hover:w-20" />
         <span className="mt-4 inline-block text-xs font-semibold uppercase tracking-wider text-[#D4AF37] transition duration-300">
           View Details →
