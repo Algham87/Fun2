@@ -53,7 +53,7 @@ export const alacarteCategories: MenuCategory[] = [
     slug: "rice-noodles-egg",
     name: "Rice, Noodles & Egg",
     image: "/images/A.png",
-    description: "Selected Australian beef cuts.",
+    description: "Essential rice, noodles, and egg options to complement your meal",
     items: [
       {
         name: "Plain Rice",
@@ -966,7 +966,7 @@ export const buffetCategories: MenuCategory[] = [
     slug: "rice-noodles-egg",
     name: "Rice, Noodles & Egg",
     image: "/images/A.png",
-    description: "Selected Australian beef cuts.",
+    description: "Essential rice, noodles, and egg options to complement your meal",
     items: [
       {
         name: "Plain Rice",
