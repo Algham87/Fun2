@@ -565,39 +565,37 @@ export default function Home() {
           </div>
         </div>
       )}
-{/* ======================================================
-    BRANCHES
-\====================================================== */}
-<section
-  id="branches"
-  className="relative scroll-mt-20 overflow-hidden border-0 bg-[linear-gradient(to_bottom,#0D0D0D_0%,#101010_50%,#0B0B0B_100%)] px-6 py-24 md:py-32"
->
-  <div className="mx-auto max-w-7xl">
-    {/* HEADER */}
-    <div className="mb-16 text-center">
-  <p className="mb-4 text-xs font-semibold uppercase tracking-[0.45em] text-[#D4AF37]">
-    Find Us
-  </p>
-  <h2 className="text-4xl font-bold tracking-tight text-white md:text-5xl">
-    Our Branches
-  </h2>
-  <div className="mx-auto mt-5 h-px w-14 bg-[#D4AF37]" />
-  <p className="mx-auto mt-6 max-w-2xl leading-8 text-gray-400">
-    Visit us at one of our Fun2 locations and enjoy
-    an unforgettable Steamboat & Grill experience.
-  </p>
-</div>
-    {/* BRANCH CARDS */}
-    <div className="grid gap-5 lg:grid-cols-2">
-  {branches.map((branch, index) => (
-  <BranchCard
-    key={`${branch.location}-${index}`}
-    branch={branch}
-  />
-))}
-</div>
-</div>
-</section>
+      {/* ======================================================
+          BRANCHES
+      \====================================================== */}
+      <section id="branches"
+        className="relative scroll-mt-20 overflow-hidden border-0 bg-[linear-gradient(to_bottom,#0D0D0D_0%,#101010_50%,#0B0B0B_100%)] px-6 py-24 md:py-32">
+          <div className="mx-auto max-w-7xl">
+            {/* HEADER */}
+            <div className="mb-16 text-center">
+            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.45em] text-[#D4AF37]">
+              Find Us
+            </p>
+            <h2 className="text-4xl font-bold tracking-tight text-white md:text-5xl">
+              Our Branches
+            </h2>
+          <div className="mx-auto mt-5 h-px w-14 bg-[#D4AF37]" />
+          <p className="mx-auto mt-6 max-w-2xl leading-8 text-gray-400">
+            Visit us at one of our Fun2 locations and enjoy
+            an unforgettable Steamboat & Grill experience.
+          </p>
+        </div>
+            {/* BRANCH CARDS */}
+            <div className="grid gap-5 lg:grid-cols-2">
+          {branches.map((branch, index) => (
+          <BranchCard
+            key={`${branch.location}-${index}`}
+            branch={branch}
+          />
+        ))}
+        </div>
+        </div>
+     </section>
       {/* ======================================================
           FOOTER
       \\====================================================== */}

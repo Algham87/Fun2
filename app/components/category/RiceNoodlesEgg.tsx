@@ -230,38 +230,45 @@ export default function RiceNoodlesEgg({
     }, 650);
   };
 
-  return (
-    <main className="min-h-screen overflow-hidden bg-[#090909] text-white">
+return (
+  <main className="min-h-screen overflow-hidden bg-[#090909] text-white">
+    <Navbar />
 
-      <Navbar />
-
-      {/* =========================
-          RICE / NOODLES / EGG
-      ========================= */}
-      <section className="border-t border-white/10 bg-[#090909] py-24 text-white">
-
-        {/* HEADER */}
-        <div className="mx-auto max-w-7xl px-6 text-center">
-
-          <p className="text-xs font-semibold uppercase tracking-[0.5em] text-orange-400">
-            The Fun2 Selection
-          </p>
-
-          <h2 className="mt-5 text-4xl font-bold tracking-tight md:text-6xl">
-            Rice, Noodles
-            <span className="text-orange-400">
-              {" "}& Egg.
-            </span>
-          </h2>
-
-          <div className="mx-auto mt-7 h-px w-24 bg-orange-500" />
-
-          <p className="mx-auto mt-7 max-w-xl leading-8 text-gray-400">
-            Choose your favourite rice, noodles and egg
-            to complete your Fun2 Steamboat experience.
-          </p>
-
+    {/* Tambahkan pt-32 agar tidak tertutup Navbar */}
+    <section className="relative z-10 border-t border-white/10 bg-[#090909] pt-25 pb-24 text-white">
+      <div className="mx-auto max-w-7xl px-6">
+        
+        <div className="relative z-20 mb-6">
+          <Link
+            href={backUrl}
+            className="inline-flex items-center gap-2 text-sm font-semibold text-orange-400 transition duration-300 hover:-translate-x-1 hover:text-orange-300"
+          >
+            ← Back to {menuLabel}
+          </Link>
         </div>
+          <div className="mt-12 text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.5em] text-orange-400">
+              The Fun2 Selection
+            </p>
+
+            <h2 className="mt-5 text-4xl font-bold tracking-tight md:text-6xl">
+              Rice, Noodles
+              <span className="text-orange-400">
+                {" "}& Egg.
+              </span>
+            </h2>
+
+            <div className="mx-auto mt-7 h-px w-24 bg-orange-500" />
+
+            <p className="mx-auto mt-7 max-w-xl leading-8 text-gray-400">
+              Choose your favourite rice, noodles and egg
+              to complete your Fun2 Steamboat experience.
+            </p>
+
+
+          </div>
+        </div>
+
 
 
         {/* CAROUSEL */}

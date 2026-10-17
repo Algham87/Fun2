@@ -164,6 +164,17 @@ export default function BuffetPage() {
               </Link>
             ))}
           </div>
+
+          <div className="mt-12 text-center sm:mt-16">
+            <Link
+              href="/menu"
+              className="inline-flex min-h-12 items-center justify-center gap-3 rounded-full border border-white/20 px-7 py-3 text-sm font-medium text-gray-200 transition duration-300 hover:border-[#D4AF37] hover:text-[#D4AF37] focus:outline-none focus:ring-2 focus:ring-[#D4AF37] focus:ring-offset-2 focus:ring-offset-[#080808] sm:px-8"
+            >
+              <span aria-hidden="true">←</span>
+              Back to Menu Selection
+            </Link>
+          </div>
+
         </div>
       </section>
 
