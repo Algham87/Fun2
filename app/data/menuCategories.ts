@@ -32,27 +32,27 @@ export const alacarteCategories: MenuCategory[] = [
     {
       name: "Clear Soup",
       image: "/images/A1.jpg",
-      description: "Premium tomahawk steak with rich marbling.",
+      description: "Light, comforting, and savory clear broth.",
     },
     {
       name: "Chicken Soup",
       image: "/images/A2.png",
-      description: "A delicious premium Wagyu selection.",
+      description: "Rich and nourishing chicken-flavored broth.",
     },
     {
       name: "Tom Yam Soup",
       image: "/images/A3.png",
-      description: "Rich and flavorful Wagyu beef.",
+      description: "Authentic spicy and sour Thai Tom Yam soup.",
     },
     {
       name: "Tom Yam Soup Extra Spicy",
       image: "/images/A4.png",
-      description: "Premium beef for your grill.",
+      description: "Extra spicy and bold Thai Tom Yam broth.",
     },
     {
       name: "Tomato Soup",
       image: "/images/A5.png",
-      description: "Tenderloin, Striploin, and Cube Roll.",
+      description: "Sweet and tangy rich tomato broth.",
     },
   ],
 },
@@ -65,27 +65,27 @@ export const alacarteCategories: MenuCategory[] = [
       {
         name: "Plain Rice",
         image: "/images/A6.png",
-        description: "Selected Australian beef.",
+        description: "Fluffy steamed white rice.",
       },
       {
         name: "Instant Noodles",
         image: "/images/A7.PNG",
-        description: "Premium beef with rich flavor.",
+        description: "Springy instant noodles, perfect for hotpot.",
       },
       {
         name: "Tang Hoon",
         image: "/images/A8.PNG",
-        description: "A delicious beef selection.",
+        description: "Clear glass vermicelli noodles.",
       },
       {
         name: "Udon",
         image: "/images/A9.png",
-        description: "Three Australian beef selections.",
+        description: "Thick and chewy Japanese udon noodles.",
       },
       {
         name: "Egg",
         image: "/images/A10.png",
-        description: "Perfect for sharing.",
+        description: "Fresh whole egg.",
       },
     ],
   },
@@ -98,92 +98,92 @@ export const alacarteCategories: MenuCategory[] = [
       {
         name: "Iceberg Lettuce",
         image: "/images/V1.png",
-        description: "Add your veggie description here.",
+        description: "Fresh and crunchy iceberg lettuce leaves.",
       },
       {
         name: "Romaine Lettuce",
         image: "/images/V2.png",
-        description: "Add your veggie description here.",
+        description: "Crisp and fresh romaine lettuce.",
       },
       {
         name: "Coral Lettuce",
         image: "/images/V3.png",
-        description: "Add your veggie description here.",
+        description: "Fresh green coral lettuce.",
       },
       {
         name: "Broccoli",
         image: "/images/V4.png",
-        description: "Add your veggie description here.",
+        description: "Fresh green broccoli florets.",
       },
       {
         name: "Enoki Mushroom",
         image: "/images/V5.png",
-        description: "Add your veggie description here.",
+        description: "Delicate and slender enoki mushrooms.",
       },
       {
         name: "White Crab Mushroom",
         image: "/images/V6.png",
-        description: "Add your veggie description here.",
+        description: "Fresh white seafood mushrooms.",
       },
       {
         name: "White Shimeji Mushroom",
         image: "/images/V7.png",
-        description: "Add your veggie description here.",
+        description: "Mild and firm white shimeji mushrooms.",
       },
       {
         name: "Oyster Mushroom",
         image: "/images/V8.png",
-        description: "Add your veggie description here.",
+        description: "Tender and savory oyster mushrooms.",
       },
       {
         name: "Abalone Mushroom",
         image: "/images/V9.png",
-        description: "Add your veggie description here.",
+        description: "Fleshy and chewy abalone mushrooms.",
       },
       {
         name: "Shitake Mushroom",
         image: "/images/V10.png",
-        description: "Add your veggie description here.",
+        description: "Aromatic and earthy shiitake mushrooms.",
       },
       {
         name: "Fresh Mushroom Combo",
         image: "/images/V11.png",
-        description: "Add your veggie description here.",
+        description: "Assorted selection of fresh mushrooms.",
       },
       {
         name: "Fresh Soy Chip",
         image: "/images/V12.png",
-        description: "Add your veggie description here.",
+        description: "Soft fresh soy sheets that absorb broth perfectly.",
       },
       {
         name: "Ring Roll",
         image: "/images/V13.png",
-        description: "Add your veggie description here.",
+        description: "Crispy fried bean curd rolls.",
       },
       {
         name: "Stuffed Tau Pok",
         image: "/images/V14.png",
-        description: "Add your veggie description here.",
+        description: "Fried tofu pockets stuffed with savory filling.",
       },
       {
         name: "Sotong Paste",
         image: "/images/V15.png",
-        description: "Add your veggie description here.",
+        description: "Smooth and savory minced squid paste.",
       },
       {
         name: "Prawn Paste",
         image: "/images/V16.png",
-        description: "Add your veggie description here.",
+        description: "Fresh and bouncy minced prawn paste.",
       },
       {
         name: "Wantan",
         image: "/images/V17.png",
-        description: "Add your veggie description here.",
+        description: "Delicate dumplings with savory filling.",
       },
       {
         name: "Tofu",
         image: "/images/V18.png",
-        description: "Add your veggie description here.",
+        description: "Soft and silky fresh bean curd.",
       },
     ],
   },
@@ -1099,7 +1099,7 @@ export const buffetCategories: MenuCategory[] = [
     slug: "bebola",
     name: "Bebola",
     image: "/images/b_B.png",
-    description: "Explore our grill selection.",
+    description: "Assorted premium meatballs, dumplings, and savory bites.",
     items: [
       {
       name: "Fish Noodle",
@@ -1173,7 +1173,7 @@ export const buffetCategories: MenuCategory[] = [
     slug: "Steamboat-ala-carte",
     name: "Steamboat Ala Carte",
     image: "/images/s_B.png",
-    description: "Explore our grill selection.",
+    description: "Fresh seafood selection featuring prawns, scallops, and squid.",
     items: [
       {
         name: "Sea Prawn",
@@ -1216,7 +1216,7 @@ export const buffetCategories: MenuCategory[] = [
     slug: "australian-beef",
     name: "Australian Beef",
     image: "/images/au_B.png",
-    description: "Explore our grill selection.",
+    description: "Juicy, tender cuts of quality Australian beef grilled to perfection.",
     items: [
       {
         name: "Aust Beef Steak",
@@ -1256,7 +1256,7 @@ export const buffetCategories: MenuCategory[] = [
     slug: "lamb-chicken",
     name: "Lamb Chicken",
     image: "/images/lc_B.png",
-    description: "Explore our grill selection.",
+    description: "Flavorful marinated chicken and tender lamb cuts for the ultimate grill.",
     items: [
       {
         name: "Shoulder",
