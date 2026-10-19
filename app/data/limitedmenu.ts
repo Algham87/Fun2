@@ -22,10 +22,10 @@ const limitedmenu = [
   },
   {
     name: "Meal Set",
-    image: "/images/W3.png",
+    image: "/images/mealset.png",
     label: "Special Set",
     description:
-      "Carefully selected ingredients for a unique dining experience.",
+      "Enjoy a delicious feast featuring 1 set of Grill Combo with, served with 2 bowls of steamed white rice, 1 set of crispy fried wantan, and 2 refreshing drinks of your choice. Choose from Orange Juice, Ribena, Wheatgrass, or Ice Lemon Tea.",
   },
   {
     name: "Angus Tomahawk",
