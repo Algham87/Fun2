@@ -109,19 +109,19 @@ const branches = [
     src: "/images/berakas_vip1.png",
     title: "VIP 2 Table",
     description:
-      "Enjoy a spacious table perfect for sharing a delicious steamboat and grill experience with family and friends.",
+      "Elevate your dining experience in our private room featuring tables T15 & 16, curated for a warm and private atmosphere. Designed to host up to 12 guests with a minimum group size of 7 guests, this space is the perfect setting for close-knit celebrations, intimate dinners, and special occasions.",
   },
    {
     src: "/images/berakas_vip2.png",
     title: "VIP 2 Table",
     description:
-      "Make your dining experience even more enjoyable with our self-service ice cream and sauce station. Enjoy complimentary ice cream from 3 different brands and a variety of sauces and condiments to complement your favourite dishes."
+      "An intimate and exclusive private dining space combining tables T17 & 18, specially designed for your cozy gatherings. This private room comfortably accommodates up to 12 guests, with a minimum reservation requirement of 7 guests, making it ideal for family dinners, small celebrations, or business get-togethers."
 },
 {
     src: "/images/berakas_vip3.png",
     title: "VIP 3 table",
     description:
-      "Make your dining experience even more enjoyable with our self-service ice cream and sauce station. Enjoy complimentary ice cream from 3 different brands and a variety of sauces and condiments to complement your favourite dishes."
+      "An exclusive private dining space combining tables T19, 20 & 21, specially designed for your larger group gatherings. This premium room comfortably accommodates up to 18 guests, with a minimum reservation requirement of 12 guests, making it ideal for family reunions, corporate dinners, and festive celebrations."
 },
     ],
     address: "Unit 3 & 4, ground Floor, Block C, Spg 58 Jln Utama berakas Kg Serusop. BB2313",
