@@ -7,6 +7,12 @@ type Props = {
   params: Promise<{ category: string }>;
 };
 
+export function generateStaticParams() {
+  return alacarteCategories.map((category) => ({
+    category: category.slug,
+  }));
+}
+
 export default async function AlacarteCategoryPage({
   params,
 }: Props) {

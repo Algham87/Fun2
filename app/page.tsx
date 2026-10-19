@@ -267,38 +267,112 @@ export default function Home() {
     if (!slider || limitedItems.length === 0) return;
     slider.scrollLeft = getLimitedCardWidth() * limitedItems.length;
   }, []);
-  const scrollLimited = (direction: "left" | "right") => {
-    const slider = limitedSliderRef.current;
-    if (!slider || limitedMovingRef.current || limitedItems.length < 2) return;
-    const step = getLimitedCardWidth();
-    if (!step) return;
-    limitedMovingRef.current = true;
-    const count = limitedItems.length;
-    const next = direction === "right"
-      ? (limitedActive + 1) % count
-      : (limitedActive - 1 + count) % count;
-    slider.scrollTo({
-      left: slider.scrollLeft + (direction === "right" ? step : -step),
-      behavior: "smooth",
-    });
-    setLimitedActive(next);
-    // Tunggu animasi selesai sebelum menormalkan posisi agar tidak bertabrakan.
-    window.setTimeout(() => {
-      const currentSlider = limitedSliderRef.current;
-      if (currentSlider) {
-        const currentStep = getLimitedCardWidth();
-        const oneSetWidth = currentStep * count;
-        if (oneSetWidth > 0) {
-          if (currentSlider.scrollLeft >= oneSetWidth * 2) {
-            currentSlider.scrollLeft -= oneSetWidth;
-          } else if (currentSlider.scrollLeft < oneSetWidth) {
-            currentSlider.scrollLeft += oneSetWidth;
-          }
+  
+
+const scrollLimited = (direction: "left" | "right") => {
+  const slider = limitedSliderRef.current;
+
+  if (!slider || limitedMovingRef.current || limitedItems.length < 2) {
+    return;
+  }
+
+  const count = limitedItems.length;
+  const currentCenter =
+    slider.getBoundingClientRect().left + slider.clientWidth / 2;
+
+  const cards = Array.from(
+    slider.querySelectorAll<HTMLElement>("[data-limited-card]")
+  );
+
+  // Cari kartu yang sedang paling dekat dengan tengah.
+  let currentCard: HTMLElement | null = null;
+  let currentDistance = Infinity;
+
+  for (const card of cards) {
+    const rect = card.getBoundingClientRect();
+    const distance = Math.abs(rect.left + rect.width / 2 - currentCenter);
+
+    if (distance < currentDistance) {
+      currentDistance = distance;
+      currentCard = card;
+    }
+  }
+
+  if (!currentCard) return;
+
+  const currentIndex = Number(currentCard.dataset.limitedIndex);
+  const nextIndex =
+    direction === "right"
+      ? (currentIndex + 1) % count
+      : (currentIndex - 1 + count) % count;
+
+  // Pilih salinan menu berikutnya yang benar-benar berada
+  // di arah yang diminta, bukan salinan pertama dalam DOM.
+  const candidates = cards.filter(
+    (card) => Number(card.dataset.limitedIndex) === nextIndex
+  );
+
+  const currentRect = currentCard.getBoundingClientRect();
+  const currentCardCenter = currentRect.left + currentRect.width / 2;
+
+  const directionalCandidates = candidates.filter((card) => {
+    const rect = card.getBoundingClientRect();
+    const center = rect.left + rect.width / 2;
+
+    return direction === "right"
+      ? center > currentCardCenter
+      : center < currentCardCenter;
+  });
+
+  const pool =
+    directionalCandidates.length > 0
+      ? directionalCandidates
+      : candidates;
+
+  const target = pool.reduce((best, card) => {
+    const rect = card.getBoundingClientRect();
+    const distance = Math.abs(
+      rect.left + rect.width / 2 - currentCenter
+    );
+
+    const bestRect = best.getBoundingClientRect();
+    const bestDistance = Math.abs(
+      bestRect.left + bestRect.width / 2 - currentCenter
+    );
+
+    return distance < bestDistance ? card : best;
+  });
+
+  limitedMovingRef.current = true;
+  setLimitedActive(nextIndex);
+
+  const targetRect = target.getBoundingClientRect();
+  const targetCenter = targetRect.left + targetRect.width / 2;
+
+  slider.scrollTo({
+    left: slider.scrollLeft + targetCenter - currentCenter,
+    behavior: "smooth",
+  });
+
+  window.setTimeout(() => {
+    const currentSlider = limitedSliderRef.current;
+
+    if (currentSlider) {
+      const step = getLimitedCardWidth();
+      const oneSetWidth = step * count;
+
+      if (oneSetWidth > 0) {
+        if (currentSlider.scrollLeft >= oneSetWidth * 2) {
+          currentSlider.scrollLeft -= oneSetWidth;
+        } else if (currentSlider.scrollLeft < oneSetWidth) {
+          currentSlider.scrollLeft += oneSetWidth;
         }
       }
-      limitedMovingRef.current = false;
-    }, 720);
-  };
+    }
+
+    limitedMovingRef.current = false;
+  }, 750);
+};
   return (
     <main
       id="home"
@@ -436,31 +510,79 @@ export default function Home() {
     <div
   id="limited-menu-carousel"
   ref={limitedSliderRef}
-  onScroll={() => {
-    const slider = limitedSliderRef.current;
-    if (!slider || limitedMovingRef.current || limitedItems.length === 0) return;
-    const cardWidth = getLimitedCardWidth();
-    const oneSetWidth = cardWidth * limitedItems.length;
-    if (!oneSetWidth || !cardWidth) return;
-    // Geser posisi secara instan hanya setelah masuk ke salinan pertama/terakhir.
-    // Ini membuat swipe manual tetap terasa mulus tanpa bentrok dengan CSS scroll-snap.
-    if (slider.scrollLeft >= oneSetWidth * 2) {
-      slider.scrollLeft -= oneSetWidth;
-    } else if (slider.scrollLeft < oneSetWidth) {
-      slider.scrollLeft += oneSetWidth;
+ 
+onScroll={() => {
+  const slider = limitedSliderRef.current;
+
+  if (!slider || limitedMovingRef.current || limitedItems.length === 0) {
+    return;
+  }
+
+  const cardWidth = getLimitedCardWidth();
+  const oneSetWidth = cardWidth * limitedItems.length;
+
+  if (!cardWidth || !oneSetWidth) return;
+
+  // Infinite loop: pindahkan posisi ke salinan setara.
+  if (slider.scrollLeft >= oneSetWidth * 2) {
+    slider.scrollLeft -= oneSetWidth;
+  } else if (slider.scrollLeft < oneSetWidth) {
+    slider.scrollLeft += oneSetWidth;
+  }
+
+  // Cari kartu yang paling dekat dengan tengah carousel.
+  const sliderCenter =
+    slider.getBoundingClientRect().left + slider.clientWidth / 2;
+
+  const cards = Array.from(
+    slider.querySelectorAll<HTMLElement>("[data-limited-card]")
+  );
+
+  let closestIndex = 0;
+  let closestDistance = Infinity;
+
+  cards.forEach((card) => {
+    const rect = card.getBoundingClientRect();
+    const cardCenter = rect.left + rect.width / 2;
+    const distance = Math.abs(cardCenter - sliderCenter);
+
+    if (distance < closestDistance) {
+      closestDistance = distance;
+      closestIndex = Number(card.dataset.limitedIndex) || 0;
     }
-    const index = Math.round((slider.scrollLeft - oneSetWidth) / cardWidth);
-    const normalizedIndex = ((index % limitedItems.length) + limitedItems.length) % limitedItems.length;
-    setLimitedActive((current) => current === normalizedIndex ? current : normalizedIndex);
-  }}
-  className="flex gap-5 overflow-x-auto px-6 pb-5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
->
+  });
+
+  setLimitedActive((current) =>
+    current === closestIndex ? current : closestIndex
+  );
+}}
+className="flex items-center gap-3 overflow-x-auto px-[calc(50%-130px)] pb-10 pt-8 sm:px-[calc(50%-150px)] md:px-[calc(50%-160px)] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
   {repeatedLimitedItems.map((item, index) => (
     <button
       key={`${item.name}-${index}`}
+      id={`limited-card-${index}`}
+      data-limited-card
+      data-limited-index={index % limitedItems.length}
       type="button"
       onClick={() => setSelectedMenu(item)}
-      className="group relative h-[420px] w-[300px] flex-none overflow-hidden rounded-2xl border border-white/10 bg-[#171717] text-left transition duration-500 hover:border-[#D4AF37]/60 sm:h-[470px] sm:w-[340px] md:h-[500px] md:w-[370px]"
+      style={{
+  transform: `perspective(1200px) scale(${
+    limitedActive === index % limitedItems.length ? 1 : 0.86
+  }) rotateY(${
+    limitedActive === index % limitedItems.length
+      ? 0
+      : index % limitedItems.length < limitedActive
+        ? 10
+        : -10
+  }deg)`,
+  opacity:
+    limitedActive === index % limitedItems.length ? 1 : 0.65,
+  filter:
+    limitedActive === index % limitedItems.length
+      ? "brightness(1)"
+      : "brightness(0.55)",
+}}
+      className="group relative h-[380px] w-[260px] flex-none overflow-hidden rounded-2xl border border-white/10 bg-[#171717] text-left transition-[transform,opacity,filter,box-shadow] duration-500 ease-out hover:border-[#D4AF37]/60 sm:h-[430px] sm:w-[300px] md:h-[460px] md:w-[320px]"
     >
       <img
         src={item.image}
@@ -529,14 +651,14 @@ export default function Home() {
               ×
             </button>
             <div className="grid md:grid-cols-2">
-              <div className="relative h-[260px] sm:h-[340px] md:h-[520px]">
-                <img
-                  src={selectedMenu.image}
-                  alt={selectedMenu.name}
-                  className="h-full w-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent md:bg-gradient-to-r" />
-              </div>
+              <div className="relative h-[220px] bg-black sm:h-[340px] md:h-[520px]">
+  <img
+    src={selectedMenu.image}
+    alt={selectedMenu.name}
+    className="h-full w-full object-contain md:object-cover"
+  />
+  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent md:bg-gradient-to-r" />
+</div>
               <div className="flex flex-col justify-center p-6 sm:p-8 md:p-12">
                 <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#D4AF37]">
                   {selectedMenu.label}

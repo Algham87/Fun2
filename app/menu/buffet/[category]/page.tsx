@@ -7,6 +7,12 @@ type Props = {
   params: Promise<{ category: string }>;
 };
 
+export function generateStaticParams() {
+  return buffetCategories.map((category) => ({
+    category: category.slug,
+  }));
+}
+
 export default async function BuffetCategoryPage({
   params,
 }: Props) {

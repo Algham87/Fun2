@@ -47,6 +47,12 @@ const menuItems = {
   },
 };
 
+export function generateStaticParams() {
+  return Object.keys(menuItems).map((slug) => ({
+    slug,
+  }));
+}
+
 export default async function MenuDetailPage({
   params,
 }: MenuPageProps) {
