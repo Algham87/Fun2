@@ -101,7 +101,7 @@ export default function Navbar() {
             <div className="absolute inset-0 scale-75 rounded-full bg-orange-500/20 opacity-0 blur-xl transition duration-500 group-hover:opacity-100" />
 
             <img
-              src="/images/logo.png"
+              src="/images/logo.webp"
               alt="FUN2 Steamboat & Grill"
               className="relative h-11 w-auto object-contain transition duration-300 group-hover:scale-105"
             />

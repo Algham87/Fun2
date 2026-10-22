@@ -346,7 +346,7 @@ export const alacarteCategories: MenuCategory[] = [
       },
       {
         name: "3 in 1 Combo",
-        image: "/images/W5.jpeg",
+        image: "/images/W5.webp",
         description: "Combination platter of assorted premium beef cuts.",
       },
       {
@@ -385,7 +385,7 @@ export const alacarteCategories: MenuCategory[] = [
   {
     slug: "australian-beef",
     name: "Australian Beef",
-    image: "/images/au.webp",
+    image: "/images/au_B.webp",
     description: "Juicy, tender cuts of quality Australian beef grilled to perfection.",
     items: [
       {

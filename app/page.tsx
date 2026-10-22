@@ -386,13 +386,13 @@ const scrollLimited = (direction: "left" | "right") => {
       <div
         className="absolute inset-0 bg-cover bg-[28%_center] sm:hidden"
         style={{
-          backgroundImage: "url('/images/tomahawkhp.jpg')", 
+          backgroundImage: "url('/images/tomahawkhp.webp')", 
         }}
       />
       <div
         className="absolute inset-0 hidden bg-cover bg-center sm:block"
         style={{
-          backgroundImage: "url('/images/tomahawk.jpeg')", 
+          backgroundImage: "url('/images/tomahawk.webp')", 
         }}
       />
         {/* Gradient Overlay */}

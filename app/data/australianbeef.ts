@@ -26,7 +26,7 @@ const australianbeef = [
   },
   {
     name: "Shortloin YP",
-    image: "/images/AU5.jpeg",
+    image: "/images/AU5.webp",
     description:
       "Perfect for sharing with friends and family.",
   },
