@@ -263,7 +263,7 @@ export default function WagyuBeef({
         key={`${item.name}-${index}`}
         className={`group relative h-[440px] w-[300px] flex-none overflow-hidden rounded-3xl md:h-[540px] md:w-[390px] ${
           isPremiumWagyu
-            ? "border-2 border-orange-500 bg-[#17120d] shadow-[0_0_100px_rgba(251,146,60,0.25)]"
+            ? "border-2 border-orange-300 bg-[#17120d] shadow-[0_0_100px_rgba(251,146,60,0.25)]"
             : "border border-white/10 bg-[#171717]"
         }`}
       >
