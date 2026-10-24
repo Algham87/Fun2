@@ -62,7 +62,7 @@ const branches = [
       "Step into Fun2 Steamboat & Grill and enjoy a warm, welcoming atmosphere from the moment you arrive. Our entrance features a cosy seating corner and a unique Instagram-inspired mirror, perfect for customers to take photos, capture memorable moments, and share their Fun2 experience on social media."
   },
     ],
-    address: "Block A, Unit 6 & 7, Ground Floor, Lot 28940 jalan Baburaja NBD",
+    address: "Unit 6 & 7, Ground Floor, Block A, Simpang 188, Jalan Pengiran Babu Raja, Kampung Kiarong BE1318 Brunei Darussalam",
     hours: "11:00 AM — 10:00 PM",
   },
   {
@@ -124,7 +124,7 @@ const branches = [
       "An exclusive private dining space combining tables T19, 20 & 21, specially designed for your larger group gatherings. This premium room comfortably accommodates up to 18 guests, with a minimum reservation requirement of 12 guests, making it ideal for family reunions, corporate dinners, and festive celebrations."
 },
     ],
-    address: "Unit 3 & 4, ground Floor, Block C, Spg 58 Jln Utama berakas Kg Serusop. BB2313",
+    address: "Unit 3 & 4, Ground Floor, Block C, Simpang 58, Jalan Utama Berakas, Kg Serusop BB2313 Brunei Darussalam",
     hours: "11:00 AM — 10:00 PM",
   },
 ];

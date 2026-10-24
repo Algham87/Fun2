@@ -10,14 +10,14 @@ const branches = [
   {
     name: "Fun2 Steamboat & Grill Baburaja",
     location: "MAIN BRANCH",
-    address: "Block A, Unit 6 & 7, Ground Floor, Lot 28940 jalan Baburaja NBD",
+    address: "Unit 6 & 7, Ground Floor, Block A, Simpang 188, Jalan Pengiran Babu Raja, Kampung Kiarong BE1318 Brunei Darussalam",
     mapsUrl: "https://maps.app.goo.gl/r3fWLq7n4pVnCNBu5",
     whatsapp: "6738131668",
   },
   {
     name: "Fun2 Steamboat & Grill Berakas",
     location: "SECOND BRANCH",
-    address: "Unit 3 & 4, ground Floor, Block C, Spg 58 Jln Utama berakas Kg Serusop. BB2313",
+    address: "Unit 3 & 4, Ground Floor, Block C, Simpang 58, Jalan Utama Berakas, Kg Serusop BB2313 Brunei Darussalam",
     mapsUrl: "https://maps.app.goo.gl/2znvuRhPyTgE6xoT9",
     whatsapp: "6738191668",
   },
