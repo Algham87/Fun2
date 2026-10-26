@@ -493,7 +493,7 @@ const scrollLimited = (direction: "left" | "right") => {
                 Exclusive at Fun2
               </p>
               <h2 className="mt-4 text-3xl font-bold tracking-tight md:text-5xl">
-                Limited Menu
+                Spesial Menu
               </h2>
               <p className="mt-4 max-w-xl text-sm leading-7 text-gray-400 md:text-base">
                 Discover our exclusive selections, available for a limited

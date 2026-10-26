@@ -289,7 +289,7 @@ export default function SteamboatComboSet({
                   )}
 
                   {/* OVERLAY */}
-                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black via-black/55 to-transparent" />
 
                   {/* NUMBER */}
                   <div className="pointer-events-none absolute right-6 top-6 rounded-full border border-white/30 bg-black/40 px-4 py-2 text-xs tracking-widest backdrop-blur-md">
@@ -315,9 +315,9 @@ export default function SteamboatComboSet({
                       {item.name}
                     </h3>
 
-                    <p className="mt-3 max-w-sm text-sm leading-6 text-gray-300">
-                      {item.description}
-                    </p>
+                    <p className="mt-2 line-clamp-3 max-w-sm text-xs leading-5 text-gray-300 sm:text-sm sm:leading-6">
+  {item.description}
+</p>
 
                     <div className="mt-5 h-px w-16 bg-orange-500 transition-all duration-500 group-hover:w-full" />
 

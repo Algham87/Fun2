@@ -171,13 +171,13 @@ export default function Drinks({
     <main className="min-h-screen overflow-hidden bg-[#090909] text-white">
       <Navbar />
 
-      <section className="border-t border-white/10 bg-[#090909] py-12 md:py-16">
+      <section className="border-t border-white/10 bg-[#090909] pt-16 pb-12 md:pt-20 md:pb-16">
         <div className="mx-auto max-w-7xl px-6">
           <Link
-            href={backUrl}
-            className="inline-flex text-sm font-medium text-orange-400 transition duration-300 hover:-translate-x-1 hover:text-orange-300"
-          >
-            ← Back to {menuLabel}
+               href={backUrl}
+               className="mt-4 inline-flex text-sm font-medium text-orange-400 transition duration-300 hover:-translate-x-1 hover:text-orange-300"
+                >
+                ← Back to {menuLabel}
           </Link>
 
           <div className="mt-8 text-center md:mt-10">

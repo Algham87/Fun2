@@ -551,22 +551,22 @@ export const alacarteCategories: MenuCategory[] = [
       {
         name: "Wagyu Combo",
         image: "/images/G1.webp",
-        description: "Add your grill description here.",
+        description: "Enjoy the rich flavours of our Wagyu Combo, featuring a selection of premium cuts including Wagyu Slice, Wagyu Chuck Flap, Wagyu Short Rib, and Wagyu Rib Finger. Each cut offers its own unique texture and flavour, making it a perfect choice for those who love tender, juicy beef grilled to perfection.",
       },
       {
         name: "Aust Beef Combo",
         image: "/images/G2.webp",
-        description: "Add your grill description here.",
+        description: "Enjoy our Australian Beef Combo, featuring a delicious selection of Australian Beef Steak, Chuck YP, Australian Beef Satay, and BBQ Short Rib. Each cut brings its own flavour and texture, perfect for grilling and enjoying together. A great choice for beef lovers looking for a satisfying and flavourful BBQ experience.",
       },
       {
         name: "Lamb Combo",
         image: "/images/G3.webp",
-        description: "Add your grill description here.",
+        description: "For lamb lovers, our Lamb Combo brings together four delicious cuts: Lamb Midloin, Lamb Roll, Lamb Satay, and Lamb BBQ. Each offers its own flavour and texture, making every grill session a little more special. Perfect for enjoying a hearty lamb feast with family and friends.",
       },
       {
         name: "Grill Combo",
         image: "/images/G4.webp",
-        description: "Add your grill description here.",
+        description: "Enjoy the best of the grill with our Grill Combo Set, featuring Chicken BBQ, Lamb BBQ, Wagyu Slice, and Chuck YP. A tasty mix of tender meats and rich flavours, perfect for grilling at the table and sharing a satisfying BBQ feast with family and friends.",
       },
 
     ],
@@ -605,7 +605,7 @@ export const alacarteCategories: MenuCategory[] = [
       },
       {
         name: "Barbeque Aust Beef",
-        image: "/images/SF5a.webp",
+        image: "/images/SF6a.webp",
         description: "Tender wagyu beef glazed with our signature teriyaki sauce.",
       },
       {
@@ -630,32 +630,32 @@ export const alacarteCategories: MenuCategory[] = [
       {
         name: "Wagyu Beef Set",
         image: "/images/E1.webp",
-        description: "Add your beverage description here.",
+        description: "A premium selection of tender Wagyu beef rolls and juicy flap meat, served with seafood tofu, sotong balls, crabsticks, cheese tofu, tau pok, egg, and fresh vegetables. A satisfying combination of rich beef flavours and fresh ingredients, perfect for a delicious hotpot meal.",
       },
       {
         name: "Aust Beef Set",
         image: "/images/E2.webp",
-        description: "Add your beverage description here.",
+        description: "Enjoy tender Australian beef rolls and flavourful chuck cuts, paired with seafood tofu, sotong balls, crabsticks, cheese tofu, tau pok, egg, and fresh vegetables. A hearty combination of quality beef and hotpot favourites for a satisfying meal.",
       },
       {
         name: "Lamb Set",
         image: "/images/E3.webp",
-        description: "Add your beverage description here.",
+        description: "A delicious selection of tender lamb rolls and flavourful lamb shoulder, complemented by seafood tofu, sotong balls, crabsticks, cheese tofu, tau pok, egg, and fresh vegetables. Perfect for lamb lovers looking for a rich and satisfying hotpot experience.",
       },
       {
         name: "Chicken Set",
         image: "/images/E4.webp",
-        description: "Add your beverage description here.",
+        description: "Featuring juicy Chicken BBQ and boneless chicken leg, this set comes with seafood tofu, sotong balls, crabsticks, cheese tofu, tau pok, egg, and fresh vegetables. A flavourful combination of tender chicken and hotpot favourites for a comforting meal.",
       },
       {
         name: "Seafood Set",
         image: "/images/E5.webp",
-        description: "Add your beverage description here.",
+        description: "A tempting selection of fresh seafood, including sliced fish, sea prawns, seafood tofu, sotong balls, crabsticks, and cheese tofu, served with tau pok and fresh vegetables. Enjoy a delicious mix of seafood flavours Enjoy a seafood platter featuring fresh mussels in their shells, abalone, and green mussels, served with coral lettuce, enoki mushrooms, white mushrooms, abalone mushrooms, and tau pok. A satisfying choice for seafood lovers who enjoy a fresh and flavourful hotpot.",
       },
       {
         name: "Mussel Set",
         image: "/images/E6.webp",
-        description: "Add your beverage description here.",
+        description: "Enjoy a seafood platter featuring fresh mussels in their shells, abalone, and green mussels, served with coral lettuce, enoki mushrooms, white mushrooms, abalone mushrooms, and tau pok. A satisfying choice for seafood lovers who enjoy a fresh and flavourful hotpot.",
       },
       
     ],
