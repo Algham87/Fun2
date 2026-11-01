@@ -468,8 +468,8 @@ export const alacarteCategories: MenuCategory[] = [
   },
 
 {
-    slug: "lamb-chicken",
-    name: "Lamb Chicken",
+    slug: "lamb-&-chicken",
+    name: "Lamb and Chicken",
     image: "/images/lc.webp",
     description: "Flavorful marinated chicken and tender lamb cuts for the ultimate grill.",
     items: [
@@ -1221,8 +1221,8 @@ export const buffetCategories: MenuCategory[] = [
   },
 
 {
-    slug: "lamb-chicken",
-    name: "Lamb Chicken",
+    slug: "lamb-&-chicken",
+    name: "Lamb and Chicken",
     image: "/images/lc_B.webp",
     description: "Flavorful marinated chicken and tender lamb cuts for the ultimate grill.",
     items: [

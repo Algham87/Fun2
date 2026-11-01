@@ -86,7 +86,7 @@ if (category.slug === "australian-beef") {
     />
   );
 }
-if (category.slug === "lamb-chicken") {
+if (category.slug === "lamb-&-chicken") {
   return (
     <LambChicken
       category={category}

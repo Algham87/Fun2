@@ -160,7 +160,7 @@ export default function ContactPage() {
               <div className="mt-6 space-y-5">
                 <div>
                   <p className="text-sm text-[#96948E]">
-                    Monday – Thursday
+                    Everyday
                   </p>
                   <p className="mt-1 text-sm font-medium text-[#F5F3ED]">
                     11:00 AM – 10:00 PM
@@ -169,7 +169,7 @@ export default function ContactPage() {
 
                 <div>
                   <p className="text-sm text-[#96948E]">
-                    Friday – Sunday
+                    Friday
                   </p>
                   <p className="mt-1 text-sm font-medium text-[#F5F3ED]">
                     2:00 PM – 10:00 PM
