@@ -320,7 +320,7 @@ export const alacarteCategories: MenuCategory[] = [
   },
   {
     slug: "wagyu-beef",
-    name: "Wagyu-Beef",
+    name: "Wagyu Beef",
     image: "/images/w.webp",
     description: "Premium marbled Wagyu cuts for an exceptional grilling experience.",
     items: [
