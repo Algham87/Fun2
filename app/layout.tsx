@@ -40,9 +40,9 @@ export const metadata: Metadata = {
     "Enjoy steamboat, tabletop grill, premium Wagyu, Australian beef, seafood, and signature combo sets at FUN2 Steamboat & Grill.",
   images: [
   {
-    url: "/images/link-v2.webp",
-    width: 2000,
-    height: 2000,
+    url: "/images/link.png",
+    width: 1200,
+    height: 630,
     alt: "FUN2 Steamboat & Grill",
   },
   ],
