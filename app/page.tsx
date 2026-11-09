@@ -5,11 +5,13 @@ import { useLayoutEffect, useRef, useState } from "react";
 import Navbar from "./components/Navbar";
 import branches from "./data/branches";
 import BranchCard from "./components/BranchCard";
+import testimonials from "./components/testimonials";
 import wagyubeef from "./data/wagyubeef";
 import australianbeef from "./data/australianbeef";
 import limitedmenu from "./data/limitedmenu";
 import Link from "next/link";
 import { title } from "process";
+import Testimonials from "./components/testimonials";
 
 // ============================================================
 // REUSABLE COMPONENTS
@@ -720,6 +722,9 @@ className="flex items-center gap-3 overflow-x-auto px-[calc(50%-130px)] pb-10 pt
         </div>
         </div>
      </section>
+
+      <Testimonials/>
+
       {/* ======================================================
           FOOTER
       \\====================================================== */}
